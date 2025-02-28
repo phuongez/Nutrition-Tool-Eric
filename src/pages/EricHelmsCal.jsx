@@ -175,7 +175,7 @@ const EricHelmsCal = () => {
                                 setBodyfatPercentage(parseFloat(value) || null);
                             }}
                             suffix="%"
-                            // inputMode="numeric"
+                            inputMode="numeric"
                         />
                     </Form.Item>
                     <Flex gap="small" vertical className="fat-percentage-demo">
@@ -359,7 +359,7 @@ const EricHelmsCal = () => {
                                     onChange={setBulkingProteinIntake}
                                     style={{flex: "1 300px"}}
                                     suffix="g/kg"
-                                    // inputMode="decimal"
+                                    inputMode="decimal"
                                     // pattern="[0-9]*[.,]?[0-9]*"
                                     />
                             </Flex>
@@ -378,7 +378,7 @@ const EricHelmsCal = () => {
                                     onChange={setCuttingProteinIntake}
                                     style={{flex: "1 300px"}}
                                     suffix="g/kg"
-                                    // inputMode="decimal"
+                                    inputMode="decimal"
                                     // pattern="[0-9]*[.,]?[0-9]*"
                                     />
                             </Flex>
@@ -397,7 +397,7 @@ const EricHelmsCal = () => {
                                 onChange={setFatIntake}
                                 style={{flex: "1 300px"}}
                                 suffix="%"
-                                // inputMode="decimal"
+                                inputMode="decimal"
                                 // pattern="[0-9]*[.,]?[0-9]*"
                                 />
                         </Flex>
