@@ -160,4 +160,12 @@ input, button, textarea, form, option, select {
   .input-area {
     padding: 1em 1.5em;
   }
+
+  .row-smallscreen {
+    margin-top: 2em;
+  }
+
+  .ant-form-item-label >label {
+    height: 3em;
+  }
 }

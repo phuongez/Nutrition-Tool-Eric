@@ -199,6 +199,7 @@ const EricHelmsCal = () => {
                     <Form.Item 
                         label="BẠN ĐANG Ở GIAI ĐOẠN TĂNG CƠ HAY GIẢM MỠ"
                         name="phase"
+                        className='row-smallscreen'
                         rules={[
                         {
                             required: true,
@@ -288,8 +289,8 @@ const EricHelmsCal = () => {
                             />
                         </Form.Item>
                         <div className="cutting-target">
-                            <Flex justify='space-between'>
-                                <p style={{minWidth: "300px"}}>SỐ LẦN REFEEDS: (KHUYẾN CÁO {refeedTimes})</p>
+                            <Flex justify='space-between' wrap>
+                                <p style={{marginBottom: "1em"}}>SỐ LẦN REFEEDS: (KHUYẾN CÁO {refeedTimes})</p>
                                 <Input 
                                     // onChange={(e) => setRefeedChoice(parseFloat(e.target.value) || null)}
                                     // defaultValue={refeedTimes}
@@ -302,7 +303,7 @@ const EricHelmsCal = () => {
                                     // pattern="[0-9]*"
                                 />
                             </Flex>
-                            <Flex justify='space-between'>
+                            <Flex justify='space-between' wrap>
                                 <p style={{fontWeight: "bold"}}>MỨC CALO NGÀY ĂN ÍT CỦA BẠN LÀ:</p>
                                 <p>{Math.round((maintainCalories - (weight * 2.2 * 3500 * lossRate) / (7 - refeedChoice))/10)*10}</p>
                             </Flex>
@@ -318,7 +319,7 @@ const EricHelmsCal = () => {
                     <div className="cardio-part">
                         <h2 className='cardio'>CARDIO</h2>
                         <p>Có thể tập cardio nếu muốn giảm bớt lượng calo phải giới hạn.</p>
-                        <Flex justify='space-between'>
+                        <Flex justify='space-between' wrap>
                             <p style={{fontWeight: "bold"}}>MỨC CALO THÂM HỤT HÀNG TUẦN TỪ ĂN UỐNG</p>
                             <p>{(Math.round((weight * 2.2 * 3500 * lossRate)/10))*10}</p>
                         </Flex>
