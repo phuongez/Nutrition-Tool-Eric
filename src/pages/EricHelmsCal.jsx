@@ -290,15 +290,16 @@ const EricHelmsCal = () => {
                         <div className="cutting-target">
                             <Flex justify='space-between'>
                                 <p style={{minWidth: "300px"}}>SỐ LẦN REFEEDS: (KHUYẾN CÁO {refeedTimes})</p>
-                                <InputNumber 
+                                <Input 
                                     // onChange={(e) => setRefeedChoice(parseFloat(e.target.value) || null)}
-                                    defaultValue={refeedTimes}
-                                    value={refeedChoice}
-                                    onChange={setRefeedChoice} 
+                                    // defaultValue={refeedTimes}
+                                    // value={refeedChoice}
+                                    onChange={(e) => setRefeedChoice(e.target.value)} 
                                     placeholder='Số lần refeed một tuần'
                                     className="right-aligned-input"
                                     style={{flex: "1 300px"}}
-                                    pattern="[0-9]*"
+                                    inputMode="numeric"
+                                    // pattern="[0-9]*"
                                 />
                             </Flex>
                             <Flex justify='space-between'>
@@ -359,7 +360,7 @@ const EricHelmsCal = () => {
                                     style={{flex: "1 300px"}}
                                     suffix="g/kg"
                                     inputMode="decimal"
-                                    pattern="[0-9]*[.,]?[0-9]*"
+                                    // pattern="[0-9]*[.,]?[0-9]*"
                                     />
                             </Flex>
                         }
@@ -378,7 +379,7 @@ const EricHelmsCal = () => {
                                     style={{flex: "1 300px"}}
                                     suffix="g/kg"
                                     inputMode="decimal"
-                                    pattern="[0-9]*[.,]?[0-9]*"
+                                    // pattern="[0-9]*[.,]?[0-9]*"
                                     />
                             </Flex>
                         }
@@ -397,7 +398,7 @@ const EricHelmsCal = () => {
                                 style={{flex: "1 300px"}}
                                 suffix="%"
                                 inputMode="decimal"
-                                pattern="[0-9]*[.,]?[0-9]*"
+                                // pattern="[0-9]*[.,]?[0-9]*"
                                 />
                         </Flex>
                         <p>* 35-40% đối với những phụ nữ có hội chứng buồng chứng đa nang hoặc kinh nguyệt không đều, 
