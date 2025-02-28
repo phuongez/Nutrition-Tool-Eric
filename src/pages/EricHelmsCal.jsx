@@ -107,7 +107,7 @@ const EricHelmsCal = () => {
                         },
                         ]}>
                         <Input
-                            // inputMode="numeric" 
+                            inputMode="numeric" 
                             placeholder='Nếu là 55kg thì nhập 55'
                             className='form-inputs'
                             onChange={(e) => setWeight(parseFloat(e.target.value) || null)}
