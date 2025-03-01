@@ -206,7 +206,8 @@ const EricHelmsCal = () => {
                             message: 'Chọn giai đoạn tăng cơ hoặc giảm mỡ',
                         },
                         ]}>
-                        <Select 
+                        <Select
+                            className='narrow-gap' 
                             onChange={(value) => setPhase(value)}
                             placeholder="Chọn giai đoạn"
                             options={[

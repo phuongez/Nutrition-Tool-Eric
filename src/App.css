@@ -169,7 +169,19 @@ input, button, textarea, form, option, select {
     margin-top: 2em;
   }
 
+  .ant-form-item-label {
+    height: 3em !important;
+  }
+
   .ant-form-item-label >label {
-    height: 3em;
+    height: 3em !important;
+  }
+
+  .ant-form-item-require {
+    height: fit-content;
+  }
+
+  .narrow-gap {
+    margin-top: 1em;
   }
 }
